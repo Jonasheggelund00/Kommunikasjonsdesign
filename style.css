@@ -71,29 +71,111 @@ nav ul {
     overflow: auto;
 
 }
-
-#bro {
-    width: 118.9rem;
-    height: 40rem;
-    object-fit: cover;
-
+#front-page-container{
+    max-width: 100%;
 }
+
 #bilde-navn{
     position: absolute;
-  top: 40%;
-  left: 50%;
+    top: 38%;
+    left: 50%;
   transform: scale(2);
 }
+#bilde-navn1{
+    position: absolute;
+    top: 43%;
+    left: 49.5%;
+  transform: scale(1);
+}
 
-/*#front-page-container{
-    margin: 2rem auto;
-    display: flex;
-    padding: 0 1rem;
-    max-width: 1200px;
-    width: 100%;
-    overflow: auto;
+#slideshow {
+    width: 125%;
+
     
-}*/
+}
+.Slides {
+    height: 35rem;
+    width: 100%;
+    object-fit:cover;
+
+}
+#slideshow:hover { 
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 2px;
+
+
+
+}
+
+
+
+#buttonRight{
+    cursor: pointer;
+    position: absolute;
+    top: 42%;
+    left: 95%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    transition: background-color 0.2s;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+
+
+}
+
+
+#buttonLeft{
+    cursor: pointer;
+    left: 1%;
+    position: absolute;
+    top: 42%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    transition: background-color 0.2s;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+}
+#buttonLeft:hover, #buttonRight:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 2px;
+    color: #000000;
+    background: transparent;
+}
+
+
+
+
+
 
 main{
     width: 80%;
@@ -138,10 +220,6 @@ main article{
     content: "";
 }
 
-article img{
-    /*Det er ikke optimalt å gjøre et mindre bilde større på denne måten, men dette er ment til øving så det er greit!*/
-    width: 100%;
-}
 
 aside{
     width: 20%;

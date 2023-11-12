@@ -22,12 +22,21 @@
     </header>
     <div id="front-page-container">
         <main>
-            <div>
-            <img id="bro" src="bilder/bridge.jpg" alt="bilde av bro">
-            <h3 id="bilde-navn">Avisnavn</h3>
-
-            </div>
-
+         
+            
+                <div id="slideshow">
+                    <h3 id="bilde-navn">Avisnavn</h3>
+                    <h3 id="bilde-navn1">Les mer her</h3>
+                    <div id="knapper">
+                    <button id="buttonLeft" onclick="plusDivs(-1)">&#10094;</button>
+                    <button id="buttonRight" onclick="plusDivs(+1)">&#10095;</button>
+                        </div>
+                <img class="Slides" src="bilder/bridge.jpg">
+                <img class="Slides" src="bilder/snow.jpg">
+                <img class="Slides" src="bilder/football.jpg">        
+                
+                </div>
+    
             <article>
                 <img src="https://via.placeholder.com/150" alt="placeholder bilde">
                 <h3>Artikkel</h3>
@@ -62,4 +71,23 @@
         <p>Kommunikasjoinsdesign</p>
     </footer>
 </body>
+<script>
+    let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    let i;
+    let x = document.getElementsByClassName("Slides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 </html>
